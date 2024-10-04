@@ -1,0 +1,58 @@
+.box1
+{min-height: 917px;}
+.box_wrap
+{width: 100px; height: 100px; background-color: black; color: white;}
+.box_wrap2
+{width: 100px; height: 100px; background-color: red; color: white;}
+.box_wrap3
+{width: 100px; height: 100px; background-color: seagreen; color: white;}
+.box_wrap4
+{width: 100px; height: 100px; background-color: skyblue; color: white;}
+.box_wrap5
+{width: 100px; height: 100px; background-color: blueviolet; color: white;}
+.box_wrap6
+{width: 100px; height: 100px; background-color: slategrey; color: white;}
+
+
+
+/* parallex_effect */
+.card {
+width: 320px;
+height: 180px;
+border-radius: 10px;
+overflow: hidden;
+margin: 15px 20px;
+box-shadow: 0 8px 30px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
+transform: scale3d(1, 1, 1);
+transition: all 0.2s ease-out, filter 0.75s ease-out;
+background: rgba(0,0,0,0.2);
+filter: grayscale(0.1) saturate(95%) brightness(95%) contrast(90%);
+}
+.card:hover {
+box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 15px rgba(0,0,0,0.3);
+filter: grayscale(0) saturate(105%) brightness(100%) contrast(100%);
+}
+.card > img {
+position: absolute;
+width: 108%;
+height: 108%;
+top: -4%;
+left: -4%;
+z-index: -10;
+transform: scale(1.05);
+transition: all 0.2s ease-out, transform 0.2s ease-out, filter 0.75s ease-out;
+filter: blur(0px);
+}
+.card.blur > img {
+filter: blur(1px) grayscale(0.1) saturate(95%);
+}
+.card > .shineLayer {
+height: 100%;
+width: 100%;
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 80%); transition: all 0.2s ease-out;}
+
+
+
+/* parallex */
+.parallax-window 
+{min-height: 917px; background: transparent;}
