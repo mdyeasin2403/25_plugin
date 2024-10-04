@@ -1,0 +1,8 @@
+.box{
+	height: calc(500px - 200px); 
+	background: linear-gradient(red, white, #0f0f);
+}
+h1{
+	text-align: center; 
+	transform: translate(0, 100px);
+}
